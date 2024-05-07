@@ -1,0 +1,5 @@
+# ignore virtual environment file
+.q2
+
+# ignore files
+__pycache__
