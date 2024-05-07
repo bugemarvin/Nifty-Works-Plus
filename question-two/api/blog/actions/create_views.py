@@ -5,7 +5,7 @@ from rest_framework import status
 from blog.serializers import BlogSerializer
 
 @api_view(['POST'])
-@permission_classes([IsAuthenticated])
+# @permission_classes([IsAuthenticated])
 def CreateBlogView(request):
     if request.method == 'POST':
         try:
