@@ -2,8 +2,8 @@
     Analyze the time complexity of the MergeSort implementation and discuss its efficiency compared to other sorting algorithms.
 '''
 
-For merge sort is considered as Big O(n log n) in average case where by the arrary/list is diveded into smaller sub-sets of the array/list and compared against the subdivided arrays.
+For merge sort is considered as Big O(n log n) in worst case where by the arrary/list is diveded into smaller sub-sets of the array/list and compared against the subdivided arrays.
 
-while Insertion, bubble and selection is considered as Big O(n ^ 2) as an avarage case, where the array/list is looped through to find the desired value.
+while Insertion, bubble and selection is considered as Big O(n ^ 2) as an avarage case scenario, where the array/list is looped through to find the desired value of element or data sets.
 
-This makes merge sort the best case senario from other sorting algorithms for larger subsets data or elements in a list/array where by the data is splited and compared against each other.
+This makes merge sort the best case scenario from other sorting algorithms for larger subsets data or elements in a list/array where by the data is splited and compared against each other.
