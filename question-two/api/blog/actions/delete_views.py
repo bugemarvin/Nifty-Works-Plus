@@ -5,10 +5,10 @@ from rest_framework import status
 from rest_framework import generics
 from blog.models import Blog
 
-@api_view(['POST'])
+@api_view(['DELETE'])
 @permission_classes([IsAuthenticated])
 def DeleteBlogView(request):
-        if request.method == 'POST':
+        if request.method == 'DELETE':
             try:
                 data = request.data
                 if 'title' in data:
