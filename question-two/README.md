@@ -2,6 +2,19 @@
 
 This is a simple REST API for a blog. It allows you to create, read, update and delete blog posts.
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Welcome](#welcome)
+  - [Register](#register)
+  - [Login](#login)
+  - [Create Post](#create-post)
+  - [Get All Posts](#get-all-posts)
+  - [Get Post](#get-post)
+  - [Update Post](#update-post)
+  - [Delete Post](#delete-post)
+
 ## Installation
 
 1. Clone the repository
