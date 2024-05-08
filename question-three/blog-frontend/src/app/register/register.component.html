@@ -1,0 +1,62 @@
+<main class="register-container">
+  <h1 class="mat-h1">New to Blogs? Please Sign Up!!!</h1>
+  <form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()" class="register-form">
+    <mat-card class="shipping-card">
+      <mat-card-content>
+        <div class="row">
+          <div class="col">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="First Name" formControlName="firstName">
+              @if (addressForm.controls['firstName'].hasError('required')) {
+                <mat-error>Email is <strong>required</strong></mat-error>
+              }
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Last Name" formControlName="lastName">
+              @if (addressForm.controls['lastName'].hasError('required')) {
+                <mat-error>Password is <strong>required</strong></mat-error>
+              }
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <mat-form-field class="full-width">
+              <input type="email" matInput placeholder="Email" formControlName="email">
+              @if (addressForm.controls['email'].hasError('required')) {
+                <mat-error>Password is <strong>required</strong></mat-error>
+              }
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <mat-form-field class="full-width">
+              <input type="password" matInput placeholder="Password" formControlName="password">
+              @if (addressForm.controls['password'].hasError('required')) {
+                <mat-error>Password is <strong>required</strong></mat-error>
+              }
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <mat-form-field class="full-width">
+              <input type="password" matInput placeholder="Confirm Password" formControlName="confirmPassword">
+              @if (addressForm.controls['confirmPassword'].hasError('required')) {
+                <mat-error>Password is <strong>required</strong></mat-error>
+              }
+            </mat-form-field>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+</main>
