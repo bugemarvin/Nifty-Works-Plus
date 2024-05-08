@@ -10,9 +10,12 @@ from blog.models import Blog
 def DeleteBlogView(request):
         if request.method == 'DELETE':
             try:
-                data = request.data
+                if request.query_params.get('title'):
+                    data = Blog.objects.filter(title=request.query_params.get('title'))
+                if not data:
+                    return Response({'error': 'No blog post found with the given title.'}, status=status.HTTP_404_NOT_FOUND)
                 if 'title' in data:
-                        blog = Blog.objects.get(title=data['title'])
+                        blog = Blog.objects.get(title=data)
                 else:
                         return Response({'error': 'Please provide a title to delete a blog post.'}, status=status.HTTP_400_BAD_REQUEST)
                 blog.delete()
