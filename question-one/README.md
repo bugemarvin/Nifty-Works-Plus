@@ -14,6 +14,7 @@ from 0 to N, where N is a positive integer.
 > The function should return a new list containing the elements of
 the input list arr sorted in ascending order using the Merge Sort
 algorithm.
+
 **Example**
 
 ```Python
